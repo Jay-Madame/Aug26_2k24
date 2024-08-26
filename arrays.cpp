@@ -16,6 +16,13 @@ void printArray(int n, int arr[])
 	}
 }
 
+void printArrayReverse(int n, int arr[])
+{
+	for (int i = (n-1); i >= 0; i--) {
+		cout << arr[i] << endl;
+	}
+}
+
 int main(int argc, const char* argv[]) {
 
 	const int CAPACITY = 10;
@@ -69,6 +76,7 @@ int main(int argc, const char* argv[]) {
 	cout << endl;
 
 	printArray(CAPACITY, a);
+    printArrayReverse(CAPACITY, a);
 
 	delete[] arrayPtr;
 

@@ -50,8 +50,8 @@ int main(int argc, const char* argv[]) {
 	// Dynamic array with ptr access, set all to zero
 	int* ptr = arrayPtr;
 	for (int i = 0; i < CAPACITY; i++) {
-		*ptr = 0;
-		ptr++;
+		*ptr = 0; //start of ptr
+		ptr++; //allows you to move up four bytes to next item in memory
 	}
 
 	// Print out with ptr access
